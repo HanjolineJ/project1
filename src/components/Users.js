@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '/Users/hanjo/WebProject/project1/src/Users.css';
 
 const dummyUsers = [
   { id: 1, name: 'Alice' },
@@ -8,12 +9,12 @@ const dummyUsers = [
   { id: 5, name: 'Eric' },
   { id: 6, name: 'Frances' },
   { id: 7, name: 'George' },
-  // ... add as many as you like
+  // hard coded users
 ];
 
 function Users() {
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 5; // requirement says 3 or 5 is fine
+  const itemsPerPage = 5; // 3 or 5 
 
   // Calculate visible items
   const startIndex = (currentPage - 1) * itemsPerPage;
@@ -23,7 +24,7 @@ function Users() {
   const totalPages = Math.ceil(dummyUsers.length / itemsPerPage);
 
   function handleClickUser(user) {
-    // For now, just alert. You'd normally navigate to a detail page.
+    // For now, just alert.
     alert(`Clicked on user: ${user.name} (ID: ${user.id})`);
   }
 
