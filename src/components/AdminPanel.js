@@ -1,4 +1,5 @@
 import React from 'react';
+import '/Users/hanjo/WebProject/project1/src/Admin.css';
 
 function AdminPanel({ dataType }) {
   let adminData = [];
