@@ -4,15 +4,15 @@ function Profile() {
   return (
     <div className="container mt-4">
       <h2>My Profile</h2>
-      {/* Placeholder image */}
+      {/* Image */}
       <img
-        src="https://via.placeholder.com/150"
+        src="/HanProfessP1.jpeg"
         alt="Profile"
-        style={{ borderRadius: '50%' }}
+        style={{ borderRadius: '100%' }}
       />
       <div className="mt-3">
-        <p><strong>Name:</strong> Jane Doe (dummy data)</p>
-        <p><strong>Email:</strong> jane@example.com</p>
+        <p><strong>Name:</strong> Hanjoline Julceus </p>
+        <p><strong>Email:</strong> hanjolinej@gmail.com</p>
       </div>
     </div>
   );
